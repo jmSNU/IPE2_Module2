@@ -1,0 +1,70 @@
+\documentclass[%
+ aip,
+amsmath,amssymb,
+reprint,
+]{revtex4-1}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{verbatim}
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{etoolbox}
+
+%% Apr 2021: AIP requests that the corresponding 
+%% email to be moved after the affiliations
+\makeatletter
+\def\@email#1#2{%
+ \endgroup
+ \patchcmd{\titleblock@produce}
+  {\frontmatter@RRAPformat}
+  {\frontmatter@RRAPformat{\produce@RRAP{*#1\href{mailto:#2}{#2}}}\frontmatter@RRAPformat}
+  {}{}
+}%
+\makeatother
+\begin{document}
+
+\preprint{AIP/123-QED}
+
+\title[Intermediate Physics Laboratory 2, Module 2]{title}
+% Force line breaks with \\
+\author{Myeong-gi Jo}
+\altaffiliation{
+whaudrl4005@gmail.com
+}
+\author{Subin Kim}
+\altaffiliation{
+subini0213@snu.ac.kr
+}
+\author{Jeong Min Lee}
+\altaffiliation{
+jmleeluck@snu.ac.kr
+}
+\author{Eugene Park}
+\altaffiliation{
+eupark@snu.ac.kr
+}
+\affiliation{ 
+Department of Physics and Astronomy, Seoul National University
+}
+
+\date{\today}
+\begin{abstract}
+this is abstract
+\end{abstract}
+
+\maketitle
+
+\section{\label{sec:Intro} Introduction} 
+this is main. 
+
+\section{\label{sec:Method} Method}
+\section{\label{sec:Result} Result}
+\section{\label{sec:Conclusion} Conclusion}
+
+\end{document}
