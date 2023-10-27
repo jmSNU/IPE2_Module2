@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{impact_chua}
+Rabinder~N Madan.
+\newblock {\em Chua's Circuit: A Paradigm for Chaos}.
+\newblock WORLD SCIENTIFIC, 1993.
+
+\bibitem{chua_circuit}
+Bocheng Bao, Q.~Li, Ning Wang, and Xu~Quan.
+\newblock Multistability in chua's circuit with two stable node-foci.
+\newblock {\em Chaos: An Interdisciplinary Journal of Nonlinear Science}, 26:043111, 04 2016.
+
+\bibitem{NIC_BJT}
+J.G. Linvill.
+\newblock Transistor negative-impedance converters.
+\newblock {\em Proceedings of the IRE}, 41(6):725--729, 1953.
+
+\bibitem{NIC_MOSFET}
+Varun~S. Kshatri, John M.~C. Covington, Joshua~W. Shehan, Thomas~P. Weldon, and Ryan~S. Adams.
+\newblock Capacitance and bandwidth tradeoffs in a cross-coupled cmos negative capacitor.
+\newblock In {\em 2013 Proceedings of IEEE Southeastcon}, pages 1--4, 2013.
+
+\bibitem{NIC_MOSFET2}
+John M.~C. Covington, Kathryn~L. Smith, Varun~S. Kshatri, Joshua~W. Shehan, Thomas~P. Weldon, and Ryan~S. Adams.
+\newblock A cross-coupled cmos negative capacitor for wideband metamaterial applications.
+\newblock In {\em Conference Proceedings - IEEE SOUTHEASTCON}, pages 1--5, NEW YORK, 2014. IEEE, IEEE.
+
+\end{thebibliography}
