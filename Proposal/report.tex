@@ -66,64 +66,51 @@
 
 \begin{document}
 
-\title{Designing Negative Resistance Circuits: A Metrological Approach}
+\title{Novel Negative Resistor with a Single Op-Amp Suitable for Higher Nonlinearity}
+
 \author{Myeong-gi Jo, Jeong-min Lee, Subin Kim and Eugene Park}
 
 \maketitle
 
 \section{Introduction}
-\noindent\fbox{%
-    \parbox{\textwidth}{%
-        \textbf{Outline}\\
-        Background : What is negative resistance?\\
-        How was and is it used?\\
-        - Chua circuit\\
-        How it is linked to module 2 and 3 (Op-amp, mosfets are the main of module 2 and 3)
-        \\
-        Different methods on creating negatived differential resistance in circuits and research using their applications.\\
-        - op-amp -> Chua circuit\\
-
-        }%
-}
 
 
+\quad For most standard electrical components, the relationship between applied voltage and current can be described to be linear. These ohmic devices are easily characterized by a straight current-voltage(\(I-V\)) curve. However, for non-linear devices, this \(I-V\) curve takes on a more complex shape, deviating from linearity. Within this domain of non-linear components, there emerges a fascinating phenomenon known as negative resistance. Unlike ordinary resistors, where the differential slope of the \(I-V\) is positive, negative resistance is characterized by certain intervals or regions in which an increase in voltage coincides with a decrease in current, causing the \(I-V\) curve to display this property.
 
-In the realm of electrical circuits, the relationship between voltage and current is typically described as linear for ohmic devices, resulting in a straight line on the current-voltage (\(I-V\)) plane. However, for non-linear devices, this \(I-V\) curve takes on a more complex shape, deviating from linearity. Within this domain of non-linear components, there emerges a fascinating phenomenon known as negative resistance. Unlike ordinary resistors, which consistently exhibit positive resistance, negative resistance is characterized by certain intervals or regions in which an increase in voltage coincides with a decrease in current, causing the \(I-V\) curve to display this intriguing property.
+One of the most renowned circuits that effectively apply negative resistance for complex phenomena is the Chua circuit, where classical chaotic behavior manifests. Central to this circuit's dynamics is the Chua diode, which serves as a negative active resistor purposely designed to produce positive feedback. The simplicity of the Chua circuit facilitated extensive exploration of chaotic system\cite{impact_chua}.
 
-One of the most renowned circuits that effectively leverages negative resistance is the Chua circuit, where classical chaotic behavior manifests. Central to this circuit's dynamics is the Chua diode, which serves as a negative active resistor purposely designed to produce positive feedback. The simplicity of the Chua circuit facilitated extensive exploration of chaotic system characteristics by physicists and engineers during the 1990s\cite{impact_chua}.
+The design of non-linear circuits, and by extension, the incorporation of negative resistance, plays a pivotal role in the pursuits of physicists and engineers. Chua diodes are created by combining operational amplifiers(Op-Amps) with several linear components, resulting in a distinctive three-segment piecewise curve on the current-voltage ($I-V$) characteristic \cite{chua_circuit}. Additionally, Negative Impedance Converters(NIC) utilize negative resistors, which are implemented using metal-oxide-semiconductor field-effect transistors(MOSFETs) or bipolar junction transistors(BJTs)\cite{NIC_BJT,NIC_MOSFET,NIC_MOSFET2}.
 
-The design of non-linear circuits, and by extension, the incorporation of negative resistance, plays a pivotal role in the pursuits of physicists and engineers. One notable approach involves creating Chua diodes by combining operational amplifiers (OP-AMPs) with several linear components, resulting in a distinctive three-segment piecewise curve on the current-voltage ($I-V$) characteristic \cite{chua_circuit}. Additionally, Negative Impedance Converters (NIC) utilize negative resistors, which are implemented using metal-oxide-semiconductor field-effect transistors (MOSFETs) or bipolar junction transistors (BJTs). The concept of NIC dates back to LINVILL's groundbreaking work in 1953, where he introduced the use of BJTs for this purpose. More recently, innovative circuits based on MOSFETs have been reported, particularly in the 2010s.\cite{NIC_BJT,NIC_MOSFET,NIC_MOSFET2}
-
-The unique characteristics of negative resistance necessitate the use of non-linear devices, such as operational amplifiers (OP-AMPs) and transistors (BJT or MOSFET). To understand and quantify the non-linear behavior inherent to these devices, the application of metrological techniques becomes indispensable. The importance of metrology becomes evident when examining complex systems, particularly chaotic ones. Chaos, by definition, is exquisitely sensitive to initial conditions and is amenable to mathematical or numerical control. However, the experimental realization of a chaotic system is a challenging task due to the myriad of uncontrollable factors at play. Consequently, comprehending potential influences on the circuit and obtaining precise parameters are paramount to the success of such experiments. In this context, metrology emerges as an essential component in the design of negative resistors.
+Negative resistance necessitates the use of non-linear devices, such as operational amplifiers (Op-Amps) and transistors (BJT, MOSFET, etc.). For robust designing, understanding and implementing the key features of such nonlinear devices is crucial, directly linking this research to the subject of Module 2 and 3. 
 
 
 
 
 \section{Research Design and Methodology}
 
-\noindent\fbox{%
-    \parbox{\textwidth}{%
-    \textbf{Outline}\\
-        Research design - enable inverted op amp\\
-        add mosfets the above for increased nonlinearity\\
-        anlayze IV curve characteristics and Impedance if possible    }%
-}
 
+\quad The nonlinear circuit is designed with a polarity inverted Op-Amp and two mosfets symmetrically connected. These results have been checked with LT-SPICE, a electronic circuit simulation software that enables real life components.
+
+The use of an polarity inverted Op-Amp, different from other Op-Amp usages in conventional chua-diodes, enables a three segment piecewise negative slope curve for the \(I-V\) characteristics.  The addition of two mosefets were intended to effectively 'vent' the Op-Amp component when it reaches a certain voltage threshold. The MOSFETs are crucial due to the intrinsic voltage-gaiting behavior.
+
+The \(I-V\) characteristics experimentation will be conducted with a voltage sweep (in both directions) while the current will be measured using a known resistor parallel to the nonlinear resistor. The effect of the MOSFETs will be analyzed by comparing results of the resistor with and without MOSFETs. A theoretical modeling of the model based on the real world Op-Amp and MOSFET characteristics will be demonstrated. If time allows, we plan to conduct experiments for various tuning possibilities of the component or the AC responce. 
 
 \section{Preliminary Implications}
 
-\noindent\fbox{%
-    \parbox{\textwidth}{%
-    \textbf{Outline}\\
-    How this device is expected to be different in application:\\
-    - Difference from the negative differential resistance shown in the above\\
-    - Novel design\\
-    - How the added nonlinearities can present diverse phenomena.
-        }%
-}
+
+\quad The novel nonlinear device is different to other conventional negative resistance circuits for the following reasons.
+
+(1) the polarity inverted Op-Amp allows the slope of the piecewise region near $I=0$ to have a steeper slope than elsewhere, differentiating it to conventional Chua diodes.
+
+(2) The \(I-V\) characteristics of a MOSFET enable higher order nonlinearities, thus allowing the investigation of such effects.
+
+
+The design of such a nonlinear device also directly connects to the final project, where we intend to investigate the nonlinear dynamics of an electrical circuit. The nonlinearity is thus crucial, and the theoretical model is expected to give quantitative explanations of the nonlinear dynamics. The change of dynamics with a certain parameter will be observed, analogous to bifurcations, chaos, or resonance curves in a nonlinear system to some extent.
 
 \section{Conclusion}
 
+
+\quad We propose a design of a novel negative resistor consisted of a polarity inverted Op-Amp and two MOSFETs, which is expected to have a different \(I-V\) than conventional negative resistors. We intend to investigate mainly the \(I-V\) characteristics and demonstrate a. This component will be used to investigate the nonlinear dynamics of an electrical circuit.
 \bibliographystyle{unsrt}
 \bibliography{../Proposal/references.bib}
 
