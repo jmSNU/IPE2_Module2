@@ -57,12 +57,14 @@
 \usepackage{tabularx}
 \usepackage{hyperref}
 \usepackage{listings}
+\usepackage{indentfirst}
 \geometry{
     a4paper,
     total={170mm,257mm},
     left=20mm,
     top=20mm,
 }
+\setlength\parindent{24pt}
 
 \begin{document}
 
@@ -75,9 +77,9 @@
 \section{Introduction}
 
 
-\quad For most standard electrical components, the relationship between applied voltage and current can be described to be linear. These ohmic devices are easily characterized by a straight current-voltage(\(I-V\)) curve. However, for non-linear devices, this \(I-V\) curve takes on a more complex shape, deviating from linearity. Within this domain of non-linear components, there emerges a fascinating phenomenon known as negative resistance. Unlike ordinary resistors, where the differential slope of the \(I-V\) is positive, negative resistance is characterized by certain intervals or regions in which an increase in voltage coincides with a decrease in current, causing the \(I-V\) curve to display this property.
+For most standard electrical components, the relationship between applied voltage and current can be described to be linear. These ohmic devices are easily characterized by a straight current-voltage(\(I-V\)) curve. However, for non-linear devices, this \(I-V\) curve takes on a more complex shape, deviating from linearity. Within this domain of non-linear components, there emerges a fascinating phenomenon known as negative resistance. Unlike ordinary resistors, where the differential slope of the \(I-V\) is positive, negative resistance is characterized by certain intervals or regions in which an increase in voltage coincides with a decrease in current, causing the \(I-V\) curve to display this property.
 
-One of the most renowned circuits that effectively apply negative resistance for complex phenomena is the Chua circuit, where classical chaotic behavior manifests. Central to this circuit's dynamics is the Chua diode, which serves as a negative active resistor purposely designed to produce positive feedback. The simplicity of the Chua circuit facilitated extensive exploration of chaotic system\cite{impact_chua}.
+One of the most renowned circuits that effectively apply negative resistance for complex phenomena is the Chua circuit, where classical chaotic behavior manifests. Central to this circuit's dynamics is the Chua diode, which serves as a negative active resistor purposely designed to produce positive feedback. The simplicity of the Chua circuit facilitated extensive exploration of chaotic systems\cite{impact_chua}.
 
 The design of non-linear circuits, and by extension, the incorporation of negative resistance, plays a pivotal role in the pursuits of physicists and engineers. Chua diodes are created by combining operational amplifiers(Op-Amps) with several linear components, resulting in a distinctive three-segment piecewise curve on the current-voltage ($I-V$) characteristic \cite{chua_circuit}. Additionally, Negative Impedance Converters(NIC) utilize negative resistors, which are implemented using metal-oxide-semiconductor field-effect transistors(MOSFETs) or bipolar junction transistors(BJTs)\cite{NIC_BJT,NIC_MOSFET,NIC_MOSFET2}.
 
@@ -89,28 +91,28 @@ Negative resistance necessitates the use of non-linear devices, such as operatio
 \section{Research Design and Methodology}
 
 
-\quad The nonlinear circuit is designed with a polarity inverted Op-Amp and two mosfets symmetrically connected. These results have been checked with LT-SPICE, a electronic circuit simulation software that enables real life components.
+The nonlinear circuit is designed with a polarity inverted Op-Amp and two MOSFETs symmetrically connected. These results have been checked with LT-SPICE, an electronic circuit simulation software that enables real-life components.
 
-The use of an polarity inverted Op-Amp, different from other Op-Amp usages in conventional chua-diodes, enables a three segment piecewise negative slope curve for the \(I-V\) characteristics.  The addition of two mosefets were intended to effectively 'vent' the Op-Amp component when it reaches a certain voltage threshold. The MOSFETs are crucial due to the intrinsic voltage-gaiting behavior.
+The use of a polarity inverted Op-Amp, different from other Op-Amp usages in conventional chua-diodes, enables a three-segment piecewise negative slope curve for the \(I-V\) characteristics.  The addition of two MOSFETs was intended to effectively 'vent' the Op-Amp component when it reaches a certain voltage threshold. The MOSFETs are crucial due to their intrinsic voltage-gaiting behavior.
 
-The \(I-V\) characteristics experimentation will be conducted with a voltage sweep (in both directions) while the current will be measured using a known resistor parallel to the nonlinear resistor. The effect of the MOSFETs will be analyzed by comparing results of the resistor with and without MOSFETs. A theoretical modeling of the model based on the real world Op-Amp and MOSFET characteristics will be demonstrated. If time allows, we plan to conduct experiments for various tuning possibilities of the component or the AC responce. 
+The \(I-V\) characteristics experimentation will be conducted with a voltage sweep (in both directions) while the current will be measured using a known resistor parallel to the nonlinear resistor. The effect of the MOSFETs will be analyzed by comparing the results of the resistor with and without MOSFETs. A theoretical modeling of the model based on the real-life Op-Amp and MOSFET characteristics will be demonstrated. If time allows, we plan to conduct experiments for various tuning possibilities of the component or the AC response. 
 
 \section{Preliminary Implications}
 
 
-\quad The novel nonlinear device is different to other conventional negative resistance circuits for the following reasons.
+The novel nonlinear device is different from other conventional negative resistance circuits for the following reasons.
 
-(1) the polarity inverted Op-Amp allows the slope of the piecewise region near $I=0$ to have a steeper slope than elsewhere, differentiating it to conventional Chua diodes.
+\begin{itemize}
+    \item (1) the polarity inverted Op-Amp allows the slope of the piecewise region near $I=0$ to have a steeper slope than elsewhere, differentiating it from conventional Chua diodes.
+    \item (2) the \(I-V\) characteristics of a MOSFET enable higher-order nonlinearities, thus allowing the investigation of such effects.
+\end{itemize}
 
-(2) The \(I-V\) characteristics of a MOSFET enable higher order nonlinearities, thus allowing the investigation of such effects.
-
-
-The design of such a nonlinear device also directly connects to the final project, where we intend to investigate the nonlinear dynamics of an electrical circuit. The nonlinearity is thus crucial, and the theoretical model is expected to give quantitative explanations of the nonlinear dynamics. The change of dynamics with a certain parameter will be observed, analogous to bifurcations, chaos, or resonance curves in a nonlinear system to some extent.
+\noindent The design of such a nonlinear device also directly connects to the final project, where we intend to investigate the nonlinear dynamics of an electrical circuit. The nonlinearity is thus crucial, and the theoretical model is expected to give quantitative explanations of the nonlinear dynamics. The change of dynamics with a certain parameter will be observed, analogous to bifurcations, chaos, or resonance curves in a nonlinear system to some extent.
 
 \section{Conclusion}
 
 
-\quad We propose a design of a novel negative resistor consisted of a polarity inverted Op-Amp and two MOSFETs, which is expected to have a different \(I-V\) than conventional negative resistors. We intend to investigate mainly the \(I-V\) characteristics and demonstrate a theoretical model to explain the results. This component will be used to investigate the nonlinear dynamics of an electrical circuit.
+We propose a design of a novel negative resistor consisting of a polarity inverted Op-Amp and two MOSFETs, which is expected to have a different \(I-V\) than conventional negative resistors. We intend to investigate mainly the \(I-V\) characteristics and demonstrate a theoretical model to explain the results. This component will be used to investigate the nonlinear dynamics of an electrical circuit.
 \bibliographystyle{unsrt}
 \bibliography{../Proposal/references.bib}
 
