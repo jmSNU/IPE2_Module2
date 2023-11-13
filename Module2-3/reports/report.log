@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.9)  13 NOV 2023 14:32
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.9)  13 NOV 2023 14:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -335,22 +335,26 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 83.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 83.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <9> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 77.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 86.
  (./report.bbl) (./report.bbl) [1] (./report.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 5258 strings out of 475584
- 73454 string characters out of 5777101
- 1916416 words of memory out of 5000000
- 26529 multiletter control sequences out of 15000+600000
+ 5262 strings out of 475584
+ 73500 string characters out of 5777101
+ 1920416 words of memory out of 5000000
+ 26533 multiletter control sequences out of 15000+600000
  619428 words of font info for 125 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  71i,5n,79p,570b,267s stack positions out of 10000i,1000n,20000p,200000b,200000s
