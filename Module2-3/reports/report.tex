@@ -81,6 +81,12 @@ Fig 4
 \appendix
 
 \section{\label{mosfetiv}MOSFET $I-V$ Characteristics}
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.45\textwidth]{./figures/TheoryCalc.png}
+  \caption{The (a) capacitance and (b) resistance about the normalized deviation of phase difference. }
+  \label{fig:stdphiandRC}
+\end{figure}
 
 \section{Derivation of the theoretical $I-V$ Characteristics of the Negative Resistor}
 \subsubsection{\label{opampiv}Op-Amp}
@@ -89,5 +95,10 @@ For the
 \subsubsection{\label{opamp_mosfetiv}Op-Amp and MOSFETs}
 The unsaturated region of the negativer resistor using enabling MOSFETs is identical to the unsaturated region of the negative resistor without the MOSFETs, since all of the MOSFETs do not flow current. We derive a theoretical description of the differential resistance slopes for the region where a MOSFET is opened. 
 
-The 
+The three currents present after saturation are depicted in Fig. . In the saturated state, the output voltage of the Op-Amp is fixed as $V_{out}-V_{sat}$. Then the following equations can be obtained.
+
+\begin{eqnarray*}
+  V_{sat} = V_{in} - R(i_1+i_2)-R_0i_1
+  V_{in} = 
+\end{eqnarray*}
 \end{document}
