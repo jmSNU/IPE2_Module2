@@ -131,8 +131,53 @@ The unsaturated region of the negativer resistor using enabling MOSFETs is ident
 
 The three currents present after saturation are depicted in Fig. . In the saturated state, the output voltage of the Op-Amp is fixed as $V_{out}-V_{sat}$. Then the following equations can be obtained.
 
-\begin{eqnarray*}
-  V_{sat} = V_{in} - R(i_1+i_2)-R_0i_1
-  V_{in} = 
-\end{eqnarray*}
+
+\begin{equation}
+  V_{sat} = V_{in}-R(i_1+i_2)-i_1R_0
+\end{equation}
+\begin{equation}
+  V_{in} - R(i_1+i_2)-R_mi_2-R_{ref}(i_2+i_3) = 0
+\end{equation}
+\begin{equation}
+  V_{sat} -i_3R_0-(i_2+i_3)R_{ref} = 0
+\end{equation}
+
+When solving the previous equtions, a solution we can obtain is the following:
+\begin{equation}
+  i_1 = \frac{V_{sat}(-R_0R_{ref}-R_0R-R_mR_0-R_mR_{ref})+V_{in}(R_0R_{ref}+R_mR_0+R_mR_{ref})}{R_0^2R_{ref}+R_0^2R+R_mR_0^2+2R_0R_{ref}R+eR_0R_{ref}+R_mR_0R+R_mR_{ref}R}
+\end{equation}
+\begin{equation}
+  i_2 = \frac{R_0(V_{sat}(-R_{ref}+R)+V_{in}(R_0+R_{ref}))}{R_0^2R_{ref}+R_0^2R+R_mR_0^2+2R_0R_{ref}R+R_mR_0R_{ref}+R_mR_0R+R_mR_{ref}R}
+\end{equation}
+\begin{equation}
+  i_3 = \frac{V_{sat}(R_0R_{ref}+R_0R+R_mR_0+R_mR)-V_{in}R_0R_{ref}}{R_0^2R_{ref}+R_0^2R+R_mR_0^2+2R_0R_{ref}R+R_mR_0R_{ref}+R_mR_0R+R_mR_{ref}R}
+\end{equation}
+
+The current flowing through $R$ is $i_1+i_2$, thus giving the proportional constant to $V_{in}$ as the following:
+\begin{equation}
+  i_1+i_2 = \frac{R_0R_{ref}+R_0R_m+R_mR_{ref}+R_0^2+R_{ref}R_0}{R_0^2(R_{ref}+R+R_m)+R_0(2R_{ref}R+R_{ref}R_m+R_mR)+R_mR_{ref}R}V_{in} + \text{Intercept}
+\end{equation}
+
+\begin{equation}
+  V_{in}-Ri_1 = V_+
+\end{equation}
+\begin{equation}
+  V_+ -R_0i_1 = V_{out}
+\end{equation}
+\begin{equation}
+  V_{out}-R_0i_2=V_-
+\end{equation}
+\begin{equation}
+  V_--R_{ref}i_2=0
+\end{equation}
+\begin{equation}
+  V_+ = V_-
+\end{equation}
+By solving these $5$ equations, the following results can be obtained.
+\begin{equation}
+  V_{out} = \frac{R_{ref}+R_0}{R_{ref}-R}V_{in}
+\end{equation}
+\begin{equation}
+  i_1 = -\frac{1}{R_{ref}-R}V_{in}
+\end{equation}
 \end{document}
