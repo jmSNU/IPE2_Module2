@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex report"] 1699946795 "report.aux" "report.bbl" "report" 1699946796 2
-  "./reportNotes.bib" 1699946794 69 7fe5a2a5b0ca4322ba6c6ddff14c7fd3 ""
+["bibtex report"] 1699946904 "report.aux" "report.bbl" "report" 1699946905 2
+  "./reportNotes.bib" 1699946903 69 7fe5a2a5b0ca4322ba6c6ddff14c7fd3 ""
   "c:/texlive/2023/texmf-dist/bibtex/bst/revtex4-1/aipnum4-1.bst" 1696844687 71940 a50ebfb042bce391330bc2a8a8568e8d ""
-  "report.aux" 1699946794 2562 cd602490af44b9055b34be3e9ac31917 "pdflatex"
+  "report.aux" 1699946903 2562 cd602490af44b9055b34be3e9ac31917 "pdflatex"
   (generated)
   "report.bbl"
   "report.blg"
   (rewritten before read)
-["pdflatex"] 1699946793 "c:/Users/JM/Documents/Module2/IPE2_Module2/Module2-3/reports/report.tex" "report.pdf" "report" 1699946796 0
-  "c:/Users/JM/Documents/Module2/IPE2_Module2/Module2-3/reports/report.tex" 1699946791 5449 bf8f3fe0dd6aa9efc088a75230271fbf ""
+["pdflatex"] 1699946902 "c:/Users/JM/Documents/Module2/IPE2_Module2/Module2-3/reports/report.tex" "report.pdf" "report" 1699946905 0
+  "c:/Users/JM/Documents/Module2/IPE2_Module2/Module2-3/reports/report.tex" 1699946898 5445 89fcfa6ec22996b6aefcfd3af61ba9e9 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1696841699 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1696841284 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1696842087 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -125,9 +125,9 @@
   "figures/MOSFETIV.png" 1699944549 23829 ca3339643d7c9b1a02ac0c5efaed681e ""
   "figures/MOSFET_circuit.png" 1699944549 11434 02f1c1cceb0149547f429095f6dd441b ""
   "figures/TheoryCalc.png" 1699944549 92404 55bc7b5510fdd73b1ade9ba91769a227 ""
-  "report.aux" 1699946794 2562 cd602490af44b9055b34be3e9ac31917 "pdflatex"
-  "report.bbl" 1699946796 1978 043fa69c5431a12b9f1276f4db34f8ca "bibtex report"
-  "report.tex" 1699946791 5449 bf8f3fe0dd6aa9efc088a75230271fbf ""
+  "report.aux" 1699946903 2562 cd602490af44b9055b34be3e9ac31917 "pdflatex"
+  "report.bbl" 1699946905 1978 043fa69c5431a12b9f1276f4db34f8ca "bibtex report"
+  "report.tex" 1699946898 5445 89fcfa6ec22996b6aefcfd3af61ba9e9 ""
   (generated)
   "report.aux"
   "report.log"
