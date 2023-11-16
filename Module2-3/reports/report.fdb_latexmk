@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex report"] 1699962650 "report.aux" "report.bbl" "report" 1699962653 0
-  "./reportNotes.bib" 1699962650 0 d41d8cd98f00b204e9800998ecf8427e ""
+["bibtex report"] 0 "report.aux" "report.bbl" "report" 1700116751 -1
+  "./reportNotes.bib" 1700116748 0 d41d8cd98f00b204e9800998ecf8427e ""
   "c:/texlive/2023/texmf-dist/bibtex/bst/base/unsrt.bst" 1696841052 18030 1376b4b231b50c66211e47e42eda2875 ""
   "references.bib" 0 -1 0 ""
-  "report.aux" 1699962652 4222 e7c8aa4a600b6e16b6c389ca7a5ca0ab "pdflatex"
+  "report.aux" 1700116749 4771 f5c1ca0ff5aa31f41d4d02b8d055ce7f "pdflatex"
   (generated)
   "report.bbl"
   "report.blg"
   (rewritten before read)
-["pdflatex"] 1699962650 "c:/Users/JM/Documents/Module2/IPE2_Module2/Module2-3/reports/report.tex" "report.pdf" "report" 1699962653 0
-  "c:/Users/JM/Documents/Module2/IPE2_Module2/Module2-3/reports/report.tex" 1699962644 19842 56b03fb53a41c6847a85320f1f4e9c0a ""
+["pdflatex"] 1700116748 "c:/Users/JM/Documents/Module2/IPE2_Module2/Module2-3/reports/report.tex" "report.pdf" "report" 1700116751 0
+  "c:/Users/JM/Documents/Module2/IPE2_Module2/Module2-3/reports/report.tex" 1700116747 27432 847ff738aeb38424d8ebedcca6ee7986 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1696841699 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1696841284 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1696842087 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -137,9 +137,9 @@
   "figures/Fig4.png" 1699949247 322937 60badf4c68f332c9ac3377ac3d69abb5 ""
   "figures/MOSFETIV.png" 1699944549 23829 ca3339643d7c9b1a02ac0c5efaed681e ""
   "figures/MOSFET_circuit.png" 1699944549 11434 02f1c1cceb0149547f429095f6dd441b ""
-  "report.aux" 1699962652 4222 e7c8aa4a600b6e16b6c389ca7a5ca0ab "pdflatex"
+  "report.aux" 1700116749 4771 f5c1ca0ff5aa31f41d4d02b8d055ce7f "pdflatex"
   "report.bbl" 1699953346 1978 043fa69c5431a12b9f1276f4db34f8ca "bibtex report"
-  "report.tex" 1699962644 19842 56b03fb53a41c6847a85320f1f4e9c0a ""
+  "report.tex" 1700116747 27432 847ff738aeb38424d8ebedcca6ee7986 ""
   (generated)
   "report.aux"
   "report.log"
